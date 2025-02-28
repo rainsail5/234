@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全世界最可爱闪耀的女孩们</title>
+    <style>
+        body {
+            font-family: '幼圆';
+            background-color: #FFE4E1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+      .option-container {
+            margin-top: 20px;
+        }
+
+      .pink-option {
+            background-color: #FFB6C1;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            margin: 4px 2px;
+        }
+
+      .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="https://p3-bot-sign.byteimg.com/tos-cn-i-v4nquku3lp/8445dc90932c4b149cc0f50a1daec814.jpg~tplv-v4nquku3lp-image.image?rk3s=68e6b6b5&x-expires=1743350016&x-signature=EFMoYJ3lYiJrRI2sbA%2BnOg1%2FJZ4%3D"
+         alt="合照">
+    <div class="option-container">
+        <a href="#" class="pink-option" onclick="showPopup('popup1')">飒飒</a>
+        <a href="#" class="pink-option" onclick="showPopup('popup2')">格格</a>
+        <a href="#" class="pink-option" onclick="showPopup('popup3')">沐沐</a>
+        <a href="#" class="pink-option" onclick="showPopup('popup4')">礼礼</a>
+    </div>
+        <div id="popup1" class="popup">
+        <img src="https://p3-bot-sign.byteimg.com/tos-cn-i-v4nquku3lp/dd8b13993de54d6f8d07dc23d2025f8e.jpg~tplv-v4nquku3lp-image.image?rk3s=68e6b6b5&x-expires=1743350016&x-signature=eJ%2BHPYQ5fbqDBVnaAfB%2B2ApV0LI%3D"
+             alt="飒飒">
+        <p>飒飒：集美貌和才华于一身的律政俏佳人，我明媚又正义的大律师姐姐</p>
+    </div>
+    <div id="popup2" class="popup">
+        <img src="https://p3-bot-sign.byteimg.com/tos-cn-i-v4nquku3lp/99a9ff1a5a654bbc91c2537f9a020aa4.jpg~tplv-v4nquku3lp-image.image?rk3s=68e6b6b5&x-expires=1743350016&x-signature=7uGs0JjHDxWlq3Ar4KRGjmHY7tY%3D"
+             alt="格格">
+        <p>格格：有趣的灵魂与柔软的心脏，温柔美丽的外表与细腻的性格，任何人见到都会爱上她</p>
+    </div>
+    <div id="popup3" class="popup">
+        <img src="https://p3-bot-sign.byteimg.com/tos-cn-i-v4nquku3lp/08ea0589e252488a852d4fc142d738ed.jpg~tplv-v4nquku3lp-image.image?rk3s=68e6b6b5&x-expires=1743350016&x-signature=kEmxbdf1oxoHxuGH1HhlD3U8nkM%3D"
+             alt="沐沐">
+        <p>沐沐：似乎有无论何时都能运筹帷幄的能力，也有蹲下与小猫轻语的柔软，你应该会为她微微上扬的嘴角着迷</p>
+    </div>
+    <div id="popup4" class="popup">
+        <img src="https://p3-bot-sign.byteimg.com/tos-cn-i-v4nquku3lp/b5fbf88fb0d24ade9d7099db4cb0fb81.jpg~tplv-v4nquku3lp-image.image?rk3s=68e6b6b5&x-expires=1743350016&x-signature=v%2B8%2F3kpDhUFARjSxQhUBxq81kUM%3D"
+             alt="礼礼">
+        <p>礼礼：被朋友们深爱着的小女孩，我想我会成为一名优秀的资深新闻工作者</p>
+    </div>
+    <script>
+        function showPopup(popupId) {
+            const popup = document.getElementById(popupId);
+            popup.style.display = 'block';
+            const closePopup = () => {
+                popup.style.display = 'none';
+                document.removeEventListener('click', closePopup);
+            };
+            document.addEventListener('click', closePopup);
+        }
+    </script>
+</body>
+
+</html>
